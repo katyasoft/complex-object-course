@@ -1,0 +1,16 @@
+title: Complex Object
+description: 'The complex testing system of English level '
+template:
+  repo: complex-object-template
+  name: complex-object
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
